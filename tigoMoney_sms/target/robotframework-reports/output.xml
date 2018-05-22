@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_171)" generated="20180517 11:53:36.639">
+<suite source="C:\Users\hp\.jenkins\workspace\projectAriel\tigoMoney_sms\test" name="Test" id="s1">
+<suite source="C:\Users\hp\.jenkins\workspace\projectAriel\tigoMoney_sms\test\registroSMS.robot" name="registroSMS" id="s1-s1">
+<test name="Envio a SMS" id="s1-s1-t1">
+<kw library="common" name="Set Up And Open Android Application">
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<msg level="INFO" timestamp="20180517 11:53:38.067">Could not connect to port 4723 on host localhost</msg>
+<msg level="INFO" timestamp="20180517 11:53:38.067">Could not get IP address for host: localhost</msg>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180517 11:53:38.631">No application is open</msg>
+<status endtime="20180517 11:53:38.633" starttime="20180517 11:53:38.592" status="FAIL"></status>
+</kw>
+<status endtime="20180517 11:53:38.638" starttime="20180517 11:53:38.590" status="FAIL"></status>
+</kw>
+<msg level="WARN" timestamp="20180517 11:53:38.639">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg level="INFO" timestamp="20180517 11:53:38.642">Got this failure java.util.concurrent.RejectedExecutionException: event executor terminated during local bind (&lt;_realsocket at 0x15 type=client open_count=1 channel=None timeout=1.0&gt;)
+Got this failure java.util.concurrent.RejectedExecutionException: event executor terminated during local bind (&lt;_realsocket at 0x16 type=client open_count=1 channel=None timeout=1.0&gt;)</msg>
+<msg level="FAIL" timestamp="20180517 11:53:38.704">URLError: &lt;urlopen error [Errno -1] Unmapped exception: java.util.concurrent.RejectedExecutionException: event executor terminated&gt;</msg>
+<status endtime="20180517 11:53:38.705" starttime="20180517 11:53:37.275" status="FAIL"></status>
+</kw>
+<status endtime="20180517 11:53:38.707" starttime="20180517 11:53:37.273" status="FAIL"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keyword If Test Failed">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Tomar screenshoot</arg>
+</arguments>
+<kw library="common" name="Tomar screenshoot">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>..${/}..${/}screenshots${/}${TEST_NAME}.png</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180517 11:53:38.739">No application is open</msg>
+<status endtime="20180517 11:53:38.740" starttime="20180517 11:53:38.726" status="FAIL"></status>
+</kw>
+<status endtime="20180517 11:53:38.770" starttime="20180517 11:53:38.724" status="FAIL"></status>
+</kw>
+<msg level="WARN" timestamp="20180517 11:53:38.772">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg level="FAIL" timestamp="20180517 11:53:38.777">No application is open</msg>
+<status endtime="20180517 11:53:38.780" starttime="20180517 11:53:38.714" status="FAIL"></status>
+</kw>
+<status endtime="20180517 11:53:38.782" starttime="20180517 11:53:38.711" status="FAIL"></status>
+</kw>
+<status endtime="20180517 11:53:38.792" starttime="20180517 11:53:38.709" status="FAIL">No application is open</status>
+</kw>
+<status critical="yes" endtime="20180517 11:53:38.801" starttime="20180517 11:53:37.269" status="FAIL">URLError: &lt;urlopen error [Errno -1] Unmapped exception: java.util.concurrent.RejectedExecutionException: event executor terminated&gt;
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status endtime="20180517 11:53:38.814" starttime="20180517 11:53:36.999" status="FAIL"></status>
+</suite>
+<status endtime="20180517 11:53:38.829" starttime="20180517 11:53:36.643" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" name="Test" id="s1">Test</stat>
+<stat pass="0" fail="1" name="registroSMS" id="s1-s1">Test.registroSMS</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20180517 11:53:36.622">Error in file 'C:\Users\hp\.jenkins\workspace\projectAriel\tigoMoney_sms\test\registroSMS.robot': Non-existing setting ''.</msg>
+<msg level="WARN" timestamp="20180517 11:53:38.639">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+<msg level="WARN" timestamp="20180517 11:53:38.772">Keyword 'Capture Screenshot On Failure' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

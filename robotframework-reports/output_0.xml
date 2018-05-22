@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_171)" generated="20180514 14:47:21.404">
+<suite source="C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_ussd\test" name="Test" id="s1">
+<suite source="C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_ussd\test\consultarSaldo.robot" name="consultarSaldo" id="s1-s1">
+<test name="Consultar saldo c.128" id="s1-s1-t1">
+<kw library="common" name="Link">
+<arguments>
+<arg>https://jira.tigo.net.bo/browse/MFS-22</arg>
+</arguments>
+<kw library="BuiltIn" name="Set Suite Metadata">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>url_test</arg>
+<arg>${url_test}</arg>
+</arguments>
+<status endtime="20180514 14:47:26.719" starttime="20180514 14:47:26.713" status="PASS"></status>
+</kw>
+<status endtime="20180514 14:47:26.721" starttime="20180514 14:47:26.708" status="PASS"></status>
+</kw>
+<kw library="common" name="Set Up And Open Android Application">
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:32.045">No application is open</msg>
+<status endtime="20180514 14:47:32.047" starttime="20180514 14:47:32.019" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:32.051" starttime="20180514 14:47:32.012" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:32.070">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;</msg>
+<status endtime="20180514 14:47:32.073" starttime="20180514 14:47:26.725" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:32.078" starttime="20180514 14:47:26.722" status="FAIL"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keyword If Test Failed">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Tomar screenshoot</arg>
+</arguments>
+<kw library="common" name="Tomar screenshoot">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>..${/}..${/}screenshots${/}${TEST_NAME}.png</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:32.129">No application is open</msg>
+<status endtime="20180514 14:47:32.131" starttime="20180514 14:47:32.114" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:32.133" starttime="20180514 14:47:32.107" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:32.137">No application is open</msg>
+<status endtime="20180514 14:47:32.139" starttime="20180514 14:47:32.095" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:32.147" starttime="20180514 14:47:32.093" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:32.148" starttime="20180514 14:47:32.086" status="FAIL">No application is open</status>
+</kw>
+<status critical="yes" endtime="20180514 14:47:32.150" starttime="20180514 14:47:26.704" status="FAIL">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test name="Consultar saldo c.129" id="s1-s1-t2">
+<kw library="common" name="Link">
+<arguments>
+<arg>https://jira.tigo.net.bo/browse/MFS-26</arg>
+</arguments>
+<kw library="BuiltIn" name="Set Suite Metadata">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>url_test</arg>
+<arg>${url_test}</arg>
+</arguments>
+<status endtime="20180514 14:47:32.173" starttime="20180514 14:47:32.167" status="PASS"></status>
+</kw>
+<status endtime="20180514 14:47:32.174" starttime="20180514 14:47:32.163" status="PASS"></status>
+</kw>
+<kw library="common" name="Set Up And Open Android Application">
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:36.290">No application is open</msg>
+<status endtime="20180514 14:47:36.296" starttime="20180514 14:47:36.262" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:36.303" starttime="20180514 14:47:36.256" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:36.316">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;</msg>
+<status endtime="20180514 14:47:36.322" starttime="20180514 14:47:32.179" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:36.326" starttime="20180514 14:47:32.177" status="FAIL"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keyword If Test Failed">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Tomar screenshoot</arg>
+</arguments>
+<kw library="common" name="Tomar screenshoot">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>..${/}..${/}screenshots${/}${TEST_NAME}.png</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:36.371">No application is open</msg>
+<status endtime="20180514 14:47:36.396" starttime="20180514 14:47:36.349" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:36.400" starttime="20180514 14:47:36.346" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:36.405">No application is open</msg>
+<status endtime="20180514 14:47:36.413" starttime="20180514 14:47:36.336" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:36.417" starttime="20180514 14:47:36.333" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:36.418" starttime="20180514 14:47:36.330" status="FAIL">No application is open</status>
+</kw>
+<status critical="yes" endtime="20180514 14:47:36.419" starttime="20180514 14:47:32.155" status="FAIL">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;
+
+Also teardown failed:
+No application is open</status>
+</test>
+<metadata>
+<item name="url_test">https://jira.tigo.net.bo/browse/MFS-26</item>
+</metadata>
+<status endtime="20180514 14:47:36.435" starttime="20180514 14:47:21.820" status="FAIL"></status>
+</suite>
+<suite source="C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_ussd\test\registroUSSD.robot" name="registroUSSD" id="s1-s2">
+<test name="Envio a USSD" id="s1-s2-t1">
+<kw library="common" name="Set Up And Open Android Application">
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:40.675">No application is open</msg>
+<status endtime="20180514 14:47:40.677" starttime="20180514 14:47:40.657" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:40.677" starttime="20180514 14:47:40.657" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:40.677">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;</msg>
+<status endtime="20180514 14:47:40.677" starttime="20180514 14:47:36.579" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:40.677" starttime="20180514 14:47:36.573" status="FAIL"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keyword If Test Failed">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Tomar screenshoot</arg>
+</arguments>
+<kw library="common" name="Tomar screenshoot">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>..${/}..${/}screenshots${/}${TEST_NAME}.png</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:47:40.724">No application is open</msg>
+<status endtime="20180514 14:47:40.724" starttime="20180514 14:47:40.708" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:40.724" starttime="20180514 14:47:40.708" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:47:40.724">No application is open</msg>
+<status endtime="20180514 14:47:40.724" starttime="20180514 14:47:40.693" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:40.724" starttime="20180514 14:47:40.693" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:47:40.724" starttime="20180514 14:47:40.677" status="FAIL">No application is open</status>
+</kw>
+<status critical="yes" endtime="20180514 14:47:40.724" starttime="20180514 14:47:36.564" status="FAIL">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status endtime="20180514 14:47:40.739" starttime="20180514 14:47:36.487" status="FAIL"></status>
+</suite>
+<status endtime="20180514 14:47:40.755" starttime="20180514 14:47:21.422" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3">Critical Tests</stat>
+<stat pass="0" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" name="Test" id="s1">Test</stat>
+<stat pass="0" fail="2" name="consultarSaldo" id="s1-s1">Test.consultarSaldo</stat>
+<stat pass="0" fail="1" name="registroUSSD" id="s1-s2">Test.registroUSSD</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20180514 14:47:21.290">Error in file 'C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_ussd\test\consultarSaldo.robot': Non-existing setting ''.</msg>
+<msg level="ERROR" timestamp="20180514 14:47:21.316">Error in file 'C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_ussd\test\registroUSSD.robot': Non-existing setting ''.</msg>
+</errors>
+</robot>

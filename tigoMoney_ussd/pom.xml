@@ -1,0 +1,39 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+      <groupId>org.tigo</groupId>
+      <artifactId>parent</artifactId>
+      <relativePath>../pom.xml</relativePath>
+      <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>tigoMoney_ussd</artifactId>
+    <packaging>pom</packaging>
+    <name>SERVICE - ${project.artifactId}</name>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+        </plugin>
+        <plugin>
+          <groupId>org.robotframework</groupId>
+          <artifactId>robotframework-maven-plugin</artifactId>
+          <version>1.4.7</version>
+          <configuration>
+            <extraPathDirectories>
+              <extraPathDirectory>../libs</extraPathDirectory>
+            </extraPathDirectories>
+            <testCasesDirectory>test</testCasesDirectory>
+            <skipTests>false</skipTests>
+          </configuration>
+          <executions>
+              <execution>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+</project>

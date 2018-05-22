@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_171)" generated="20180514 14:48:05.587">
+<suite source="C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_sms\test" name="Test" id="s1">
+<suite source="C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_sms\test\registroSMS.robot" name="registroSMS" id="s1-s1">
+<test name="Envio a SMS" id="s1-s1-t1">
+<kw library="common" name="Set Up And Open Android Application">
+<kw library="AppiumLibrary" name="Open Application">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME_ANDROID}</arg>
+<arg>deviceName=${DEVICE_NAME_ANDROID}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:48:15.440">No application is open</msg>
+<status endtime="20180514 14:48:15.440" starttime="20180514 14:48:15.393" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:48:15.440" starttime="20180514 14:48:15.377" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:48:15.455">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;</msg>
+<status endtime="20180514 14:48:15.455" starttime="20180514 14:48:11.128" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:48:15.471" starttime="20180514 14:48:11.128" status="FAIL"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keyword If Test Failed">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Tomar screenshoot</arg>
+</arguments>
+<kw library="common" name="Tomar screenshoot">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>..${/}..${/}screenshots${/}${TEST_NAME}.png</arg>
+</arguments>
+<kw library="common" name="Capture Screenshot On Failure">
+<kw library="AppiumLibrary" name="Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>${SCREENSHOTS}${/}${TEST NAME}.png</arg>
+</arguments>
+<msg level="FAIL" timestamp="20180514 14:48:15.507">No application is open</msg>
+<status endtime="20180514 14:48:15.509" starttime="20180514 14:48:15.494" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:48:15.511" starttime="20180514 14:48:15.491" status="FAIL"></status>
+</kw>
+<msg level="FAIL" timestamp="20180514 14:48:15.515">No application is open</msg>
+<status endtime="20180514 14:48:15.516" starttime="20180514 14:48:15.471" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:48:15.519" starttime="20180514 14:48:15.471" status="FAIL"></status>
+</kw>
+<status endtime="20180514 14:48:15.519" starttime="20180514 14:48:15.471" status="FAIL">No application is open</status>
+</kw>
+<status critical="yes" endtime="20180514 14:48:15.519" starttime="20180514 14:48:11.128" status="FAIL">URLError: &lt;urlopen error [Errno 10061] Connection refused&gt;
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status endtime="20180514 14:48:15.519" starttime="20180514 14:48:06.004" status="FAIL"></status>
+</suite>
+<status endtime="20180514 14:48:15.535" starttime="20180514 14:48:05.600" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" name="Test" id="s1">Test</stat>
+<stat pass="0" fail="1" name="registroSMS" id="s1-s1">Test.registroSMS</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20180514 14:48:05.474">Error in file 'C:\Users\hp\.jenkins\workspace\ultimaPruebaTigo\tigoMoney_sms\test\registroSMS.robot': Non-existing setting ''.</msg>
+</errors>
+</robot>

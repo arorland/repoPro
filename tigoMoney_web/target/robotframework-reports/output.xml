@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.9.1 (Jython 2.7.0 on java1.8.0_141)" generated="20180522 13:09:11.609">
+<suite source="C:\Users\hp\.jenkins\workspace\projectAriel\tigoMoney_web\test" name="Test" id="s1">
+<suite source="C:\Users\hp\.jenkins\workspace\projectAriel\tigoMoney_web\test\web.robot" name="Web" id="s1-s1">
+<test name="Prueba tres" id="s1-s1-t1">
+<kw name="Abrir Navegador">
+<doc>Ingresamos al Navegador</doc>
+<kw library="SeleniumLibrary" name="Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg level="INFO" timestamp="20180522 13:09:12.325">browserName: firefox</msg>
+<msg level="INFO" timestamp="20180522 13:09:12.327">Opening browser 'firefox'</msg>
+<msg level="INFO" timestamp="20180522 13:09:48.616">1527008952428	geckodriver	INFO	geckodriver 0.19.1
+1527008952438	geckodriver	INFO	Listening on 127.0.0.1:44988
+1527008952964	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile.YSX46uks5qW8"
+1527008953968	Marionette	INFO	Enabled via --marionette
+1527008957258	Marionette	INFO	Listening on port 62852
+1527008958274	Marionette	WARN	TLS certificate errors will be ignored for this session</msg>
+<status endtime="20180522 13:09:48.618" starttime="20180522 13:09:12.316" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<status endtime="20180522 13:09:52.139" starttime="20180522 13:09:48.621" status="PASS"></status>
+</kw>
+<status endtime="20180522 13:09:52.144" starttime="20180522 13:09:12.312" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Close Browser">
+<doc>Closes the current browser instance.</doc>
+<status endtime="20180522 13:09:52.436" starttime="20180522 13:09:52.147" status="PASS"></status>
+</kw>
+<doc>Prueba "prueba 3"</doc>
+<status critical="yes" endtime="20180522 13:09:52.437" starttime="20180522 13:09:12.309" status="PASS"></status>
+</test>
+<doc>Prueba de web</doc>
+<status endtime="20180522 13:09:52.442" starttime="20180522 13:09:11.993" status="PASS"></status>
+</suite>
+<status endtime="20180522 13:09:52.451" starttime="20180522 13:09:11.614" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" name="Test" id="s1">Test</stat>
+<stat pass="1" fail="0" name="Web" id="s1-s1">Test.Web</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

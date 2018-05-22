@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" skip="0" tests="1" name="Test" errors="0">
+<testcase classname="Test.registroSMS" name="Envio a SMS" time="2">
+<failure message="URLError: &lt;urlopen error [Errno -1] Unmapped exception: java.util.concurrent.RejectedExecutionException: event executor terminated&gt;&#10;&#10;Also teardown failed:&#10;No application is open" type="AssertionError"></failure>
+</testcase>
+</testsuite>
